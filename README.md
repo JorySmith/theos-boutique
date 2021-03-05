@@ -3,7 +3,7 @@ A local small business boutique prototype
 
 Figma markup link and image:
 
-Link: https://t.co/WSfWTFQwbN?amp=1
+Link: https://www.figma.com/file/qLLK17GaC4lPLiZvdAhYC9/Theo's-Boutique
 
 Image:
 
