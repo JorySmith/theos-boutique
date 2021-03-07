@@ -39,26 +39,26 @@ a {
   justify-content: center;
 }
 
+
 .categories-nav ul {
   list-style-type: none;
 }
 
 
-.grid-img-container {
+.flex-img-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;  
   margin: 1rem auto;
-  max-width: 1200px;
-  
+  max-width: 1200px;  
 }
 
-.grid-item {
+.flex-item {
   margin: 1rem;
 }
 
-.grid-item img {
+.flex-item img {
   width: 100%;
 }
 
