@@ -20,56 +20,55 @@
 
   <header>
 
-    <nav>
+    <nav id="main-nav">
 
-      <div class="top-nav">
+      <div class="main-nav">
 
-        <div class="menu">
+        <div class="menu-icon" id="menu-icon">
           <i class="fas fa-bars"></i>
         </div>
 
         <div class="logo">
-          <h1>Theo's Boutique</h1>
-          <span>Est. 1982</span>
+          <a href="#top">
+            <h1>Theo's Boutique</h1>
+          </a>
+          <span class="established">Est. 1982</span>
         </div>
 
-        <div class="search-user-shopping">
-
+        <div class="search-user-cart">
           <div class="search">
-            <div class="search-container">
-              <div class="search-box">
-                <input type="text" placeholder="">
-              </div>
-              <div class="search-icon">
-                <i class="fas fa-search"></i>
-              </div>
+            <div class="search-icon">
+              <a href="#"><i class="fas fa-search"></i></a>
             </div>
           </div>
-
           <div class="user">
-            <i class="fas fa-user"></i>
+            <a href="#"><i class="fas fa-user"></i></a>
           </div>
           <div class="shopping-cart">
-            <i class="fas fa-shopping-bag"></i>
+            <a href="#"><i class="fas fa-shopping-bag"></i></a>
           </div>
-
         </div>
+
       </div>
 
-      <div class="categories-nav">
-        <ul>
-          <li><a href="#">New Arrivals</a></li>
-          <li><a href="#">Boots</a></li>
-          <li><a href="#">Dress</a></li>
-          <li><a href="#">Heels</a></li>
-          <li><a href="#">Athletic</a></li>
-          <li><a href="#">On Sale</a></li>
-        </ul>
-      </div>
+      <div class="sub-nav">
 
-      <hr>
+        <div class="menu-items inactive" id="menu-items">
+          <ul>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Boots</a></li>
+            <li><a href="#">Dress</a></li>
+            <li><a href="#">Heels</a></li>
+            <li><a href="#">Athletic</a></li>
+            <li><a href="#">On Sale</a></li>
+          </ul>
+        </div>
+
+      </div>
 
     </nav>
+
+    <hr>
 
   </header>
 
@@ -337,6 +336,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 
 </body>
 
