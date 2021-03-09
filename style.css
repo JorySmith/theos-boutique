@@ -59,7 +59,12 @@ a {
 .shopping-cart {
   font-size: 1.5rem;
   padding: 0 .5rem;  
+  border: none;
   cursor: pointer;
+}
+
+.menu-icon {
+  background-color: #fff;
 }
 
 .logo {
@@ -83,12 +88,13 @@ a {
 
 .sub-nav {
   background-color: #fff;
+  font-size: 1rem;  
 }
 
-.inactive {
-  visibility: hidden;
-  max-height: 0;
-  opacity: 0;
+.menu-items {  
+  max-height: 0;  
+  overflow: hidden;
+  transition: max-height .7s;
 }
 
 .menu-items ul {
@@ -96,9 +102,25 @@ a {
   padding: 1rem 2rem;  
 }
 
-.menu-items li {
+.menu-items li {  
   padding: .5rem 0;
 }
+
+.menu-items li:hover,
+.menu-items li:focus {  
+  background-color: var(--clr-vryvry-light-grey);
+}
+
+.menu-items a {  
+  text-decoration: none;
+}
+
+.menu-items a:hover,
+.menu-items a:focus {
+  font-weight: bold;
+  color: #000;
+}
+
 
 nav hr {
   margin: .5rem 0;
