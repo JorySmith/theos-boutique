@@ -134,15 +134,10 @@ nav hr {
 .banner {
   display: flex;
   justify-content: center;
-  /* z-index: -1; */
 }
 
 .carousel {
   cursor: pointer;
-}
-
-.carousel-item {
-  /* z-index: -1; */
 }
 
 .on-sale,
