@@ -195,6 +195,11 @@ nav hr {
   margin: .25rem .5rem;
 }
 
+.product:hover,
+.product:focus {
+  transform: scale(1.05);
+}
+
 .product img {
   width: 100%;
 }
