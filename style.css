@@ -30,6 +30,7 @@ h2,
 h3 {
   font-size: 1rem;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 a {
@@ -140,17 +141,41 @@ nav hr {
   cursor: pointer;
 }
 
+.all-shoes {
+  padding: 2rem 0;
+}
+
+.all-shoes-header {
+  text-align: center;
+}
+
 .on-sale,
-.new-arrivals {
+.new-arrivals,
+.athletic,
+.boots,
+.dress,
+.heels {
   display: flex;
   flex-direction: column;
   align-items: center;  
 }
 
 #on-sale,
-#new-arrivals {
+#new-arrivals,
+#athletic,
+#boots,
+#dress,
+#heels {
   padding-top: 175px;
   margin-top: -175px;
+}
+
+.athletic {
+  padding: 2rem 0 0;
+}
+
+.heels {
+  padding: 0 0 2rem;
 }
 
 .on-sale {
@@ -163,6 +188,7 @@ nav hr {
   justify-content: center;
   align-items: center;  
   max-width: 1200px;  
+  padding-bottom: 1.5rem;
 }
 
 .product {
