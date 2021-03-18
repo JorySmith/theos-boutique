@@ -228,7 +228,6 @@ nav hr {
 .add-to-cart-btn:hover,
 .add-to-cart-btn:focus {
   color: #fff;
-  transform: scale(1.05);
   background-color: var(--clr-dark-grey);
   border: none;
   -webkit-box-shadow: 1px 1px 2px 0px var(--clr-dark-grey); 
