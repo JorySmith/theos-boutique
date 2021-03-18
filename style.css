@@ -44,7 +44,10 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: .5rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
   z-index: 999;
+  
 }
 
 .sticky {
@@ -210,6 +213,23 @@ nav hr {
 
 .text-line-through {
   text-decoration: line-through;
+}
+
+.add-to-cart-btn {
+  font-family: inherit;
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+  border: 1px solid #000;
+}
+
+.add-to-cart-btn:hover,
+.add-to-cart-btn:focus {
+  transform: scale(1.05);
+  background-color: var(--clr-vryvry-light-grey);
+  border: 2px solid #000;
 }
 
 .new-arrivals {
