@@ -36,14 +36,6 @@
         </div>
 
         <div class="search-user-cart">
-          <div class="search">
-            <div class="search-icon">
-              <a href="#"><i class="fas fa-search"></i></a>
-            </div>
-          </div>
-          <div class="user">
-            <a href="#"><i class="fas fa-user"></i></a>
-          </div>
           <div class="shopping-cart">
             <a href="#"><i class="fas fa-shopping-bag"></i></a>
           </div>
@@ -280,8 +272,23 @@
 
     </section>
 
-  </main>
+    <section class="contact-us" id="contact-us">
+      <h1>Contact Us</h1>
+      <div class="contact-us-container">
+        <form class="contact-us-form" action="POST" method="post">
+          <div class="entry"><label for="first-name">First Name:</label><input type="text" required></div>
+          <div class="entry"><label for="last-name">Last Name:</label><input type="text" required></div>
+          <div class="entry"><label for="email">Email:</label><input type="email" required></div>
+          <div class="entry"><label for="phone-number">Phone Number:</label><input type="tel"></div>
+          <div class="entry"><label for="message">Message:</label><textarea rows="6" placeholder="Your message here"
+              required></textarea></div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
 
+    </section>
+
+  </main>
 
   <footer>
 
@@ -291,28 +298,22 @@
 
     <div class="footer-link-columns">
       <div class="footer-col1 col">
-        <p><a href="#">Our Story</a></p>
+        <p><a href="./index.html#about-us">Our Story</a></p>
         <a href="#"><i class="fab fa-pinterest"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-facebook-f"></i></a>
       </div>
 
       <div class="footer-col2 col">
-        <p><a href="#">Terms and Conditions</a></p>
-        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="./index.html#location-hours">Locations & Hours</a></p>
+        <p><a href="./index.html#mailing-list">Exclusive Mailing List</a></p>
       </div>
 
       <div class="footer-col3 col">
-        <p><a href="#">Shipping Info</a></p>
-        <p><a href="#">Returns</a></p>
-      </div>
-
-      <div class="footer-col4 col">
-        <p><a href="#">Contact Us</a></p>
-        <p><a href="#">Gift Cards</a></p>
+        <p><a href="#contact-us">Contact Us</a></p>
+        <p><a href="./index.html#new-arrivals">New Arrivals</a></p>
       </div>
     </div>
-
 
     <div class="payment-options-accepted">
       <i class="fab fa-apple-pay"></i>
@@ -327,6 +328,7 @@
     </p>
 
   </footer>
+
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
