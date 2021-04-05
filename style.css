@@ -38,6 +38,11 @@ a {
   color: inherit;
 }
 
+button,
+i {
+  cursor: pointer;
+}
+
 .main-nav {
   background-color: #fff;
   display: flex;
@@ -64,7 +69,7 @@ a {
 }
 
 .menu-icon,
-.shopping-cart {
+.shopping-cart-icon {
   font-size: 1.5rem;
   padding: 0 .5rem;  
   border: none;
@@ -88,10 +93,6 @@ a {
 
 .logo .established {
   font-size: .8rem;
-}
-
-.search-user-cart {
-  display: flex;
 }
 
 .sub-nav {
@@ -129,9 +130,114 @@ a {
   color: #000;
 }
 
-nav hr {
-  margin: .5rem 0;
+.shopping-cart-icon {
+  position: relative;
 }
+
+.num-cart-items {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: .95rem;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 0 .25rem;
+}
+
+.shopping-cart {
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  max-width: 600px;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  text-align: center;
+  overflow: auto;
+  transition: transform .5s;
+}
+
+.hide-cart {
+  transform: translateX(100%);
+}
+
+.close-cart {
+  width: 100%;
+  text-align: left;
+}
+
+.close-cart i {
+  font-size: 1.5rem;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.theo-rewards {
+  margin: 1rem 0;
+}
+
+.rewards-btn {
+  background-color: var(--clr-dark-grey);
+  border: 3px solid var(--clr-dark-grey);
+  color: #fff;
+  padding: .25rem 1rem;
+  box-shadow: 1px 1px 2px #000;
+}
+
+.rewards-btn:hover,
+.rewards-btn:focus,
+.checkout-btn:hover,
+.checkout-btn:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+.cart-product {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-vryvry-light-grey);
+  padding: 1rem;
+  margin: .25rem 0;
+  
+}
+
+.cart-product-name,
+.cart-item-price,
+.cart-item-qty-container,
+.cart-item-remove {
+  margin-top: 3.5rem;
+}
+
+.cart-product-img img {
+  max-width: 120px;
+}
+
+.qty {
+  padding: .25rem;
+  border-radius: 5px;
+}
+
+.shopping-cart-total {
+  font-size: 1rem;
+  padding: .5rem;
+}
+
+.checkout-btn {
+  background-color: var(--clr-dark-grey);
+  border: 3px solid var(--clr-dark-grey);
+  color: #fff;
+  padding: .25rem 10%;
+  box-shadow: 1px 1px 2px #000;
+}
+
+
+
+
+
+
+
 
 .banner {
   display: flex;

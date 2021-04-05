@@ -1,7 +1,12 @@
-const menuIcon = document.getElementById('menu-icon');
-const menuItems = document.getElementById('menu-items');
-const mainNav = document.getElementById('main-nav');
-const sticky = mainNav.offsetTop;
+const mainNav = document.getElementById('main-nav')
+const menuIcon = document.getElementById('menu-icon')
+const menuItems = document.getElementById('menu-items')
+const navCartIcon = document.getElementById('shopping-cart-icon')
+// const navCartItemsNum = document.getElementById('num-cart-items')
+const sticky = mainNav.offsetTop
+const shoppingCart = document.getElementById('shopping-cart')
+const closeCart = document.getElementById('close-cart')
+
 
 // if menu-items max-height, menu-items.style.maxHeight = null
 // else menu-items.style.maxHeight = panel.scrollHeight + "px"
@@ -19,6 +24,18 @@ window.onscroll = function () {
   stickyNav()
 };
 
+navCartIcon.addEventListener('click', () =>
+  shoppingCart.classList.toggle('hide-cart')
+)
+
+closeCart.addEventListener('click', () =>
+  shoppingCart.classList.toggle('hide-cart')
+)
+
+
+
+
+
 function stickyNav() {
   if (window.pageYOffset > sticky + 1) {
     mainNav.classList.add("sticky");
@@ -27,3 +44,6 @@ function stickyNav() {
   }
 }
 
+function hideCart() {
+
+}

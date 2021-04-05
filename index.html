@@ -27,18 +27,15 @@
         <button class="menu-icon" id="menu-icon">
           <i class="fas fa-bars"></i>
         </button>
-
         <div class="logo">
           <a href="./index.html">
             <h1>Theo's Boutique</h1>
           </a>
           <span class="established">Est. 1982</span>
         </div>
-
-        <div class="search-user-cart">
-          <div class="shopping-cart">
-            <a href="#"><i class="fas fa-shopping-bag"></i></a>
-          </div>
+        <div class="shopping-cart-icon" id="shopping-cart-icon">
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          <span class="num-cart-items" id="num-cart-items">2</span>
         </div>
 
       </div>
@@ -60,8 +57,105 @@
 
     </nav>
 
-    <hr>
+    <div class="shopping-cart" id="shopping-cart">
 
+      <div class="close-cart" id="close-cart">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="my-cart">
+        <h1>My Shopping Cart</h1>
+      </div>
+      <div class="theo-rewards">
+        <div class="rewards-info-container">
+          <p>
+            Join Theo's Boutique rewards program <br>
+            <strong>Save 20% on this order!</strong>
+          </p>
+        </div>
+        <a href="#">
+          <button class="rewards-btn">Join Theo's Rewards</button>
+        </a>
+      </div>
+      <div class="cart-product">
+        <div class="cart-product-img">
+          <img src="./images/heel3.png" alt="high heels">
+        </div>
+        <div class="cart-product-name">
+          <p class="item-name">Mario Lucci high heel </p>
+        </div>
+        <div class="cart-item-price">
+          <p>Price</p>
+          <span class="item-price">$79</span>
+        </div>
+        <div class="cart-item-qty-container">
+          <p class="cart-item-qty">Qty</p>
+          <div class="qty-selector">
+            <label for="qty"></label>
+            <select class="qty" id="qty" name="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+        <div class="cart-item-remove">
+          <i class="fas fa-trash"></i>
+        </div>
+
+      </div>
+      <div class="cart-product">
+        <div class="cart-product-img">
+          <img src="./images/heel3.png" alt="high heels">
+        </div>
+        <div class="cart-product-name">
+          <p class="item-name">Mario Lucci high heel </p>
+        </div>
+        <div class="cart-item-price">
+          <p>Price</p>
+          <span class="item-price">$79</span>
+        </div>
+        <div class="cart-item-qty-container">
+          <p class="cart-item-qty">Qty</p>
+          <div class="qty-selector">
+            <label for="qty"></label>
+            <select class="qty" id="qty" name="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+        <div class="cart-item-remove">
+          <i class="fas fa-trash"></i>
+        </div>
+
+      </div>
+      <div class="shopping-cart-total">
+        <span>Total:</span>
+        <span class="cart-total-price" id="cart-total-price">
+          $79
+        </span>
+      </div>
+
+      <button class="checkout-btn" id="checkout-btn">
+        Checkout
+      </button>
+    </div>
+    <hr>
   </header>
 
   <main>
