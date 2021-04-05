@@ -149,10 +149,12 @@ nav {
 }
 
 .shopping-cart {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   top: 0;
   right: 0;
-  width: 50vw;
+  width: 60vw;
   max-width: 600px;
   height: 100%;
   position: fixed;
@@ -202,8 +204,7 @@ nav {
   justify-content: space-between;
   background-color: var(--clr-vryvry-light-grey);
   padding: 1rem;
-  margin: .25rem 0;
-  
+  margin: .25rem 0;  
 }
 
 .cart-product-name,
@@ -211,6 +212,11 @@ nav {
 .cart-item-qty-container,
 .cart-item-remove {
   margin-top: 3.5rem;
+}
+
+.cart-product {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .cart-product-img img {
