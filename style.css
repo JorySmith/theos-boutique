@@ -43,6 +43,10 @@ i {
   cursor: pointer;
 }
 
+nav {
+  background-color: #fff;
+}
+
 .main-nav {
   background-color: #fff;
   display: flex;
