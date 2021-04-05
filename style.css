@@ -158,6 +158,7 @@ nav {
   max-width: 600px;
   height: 100%;
   position: fixed;
+  padding: 0 .25rem;
   z-index: 999;
   text-align: center;
   overflow: auto;
@@ -217,6 +218,7 @@ nav {
 .cart-product {
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 1px 1px 2px var(--clr-very-light-grey);
 }
 
 .cart-product-img img {
@@ -234,18 +236,14 @@ nav {
 }
 
 .checkout-btn {
+  font-size: 1.2rem;
   background-color: var(--clr-dark-grey);
   border: 3px solid var(--clr-dark-grey);
   color: #fff;
   padding: .25rem 10%;
+  margin: 0 auto;
   box-shadow: 1px 1px 2px #000;
 }
-
-
-
-
-
-
 
 
 .banner {
