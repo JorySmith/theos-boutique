@@ -28,7 +28,7 @@ h2,
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   text-align: center;
   padding-bottom: 2rem;
 }
@@ -47,14 +47,18 @@ nav {
   background-color: #fff;
 }
 
+.main-nav,
+.menu-items {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .main-nav {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: .5rem 0;
-  max-width: 1200px;
-  margin: 0 auto;
   z-index: 999;  
 }
 
@@ -151,11 +155,12 @@ nav {
 .shopping-cart {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #fff;
   box-shadow: -1px 1px 2px var(--clr-dark-grey);
   top: 0;
   right: 0;
-  width: 60vw;
+  width: 80vw;
   max-width: 600px;
   height: 100%;
   position: fixed;
@@ -181,20 +186,6 @@ nav {
   cursor: pointer;
 }
 
-.theo-rewards {
-  margin: 1rem 0;
-}
-
-.rewards-btn {
-  background-color: var(--clr-dark-grey);
-  border: 3px solid var(--clr-dark-grey);
-  color: #fff;
-  padding: .25rem 1rem;
-  box-shadow: 1px 1px 2px #000;
-}
-
-.rewards-btn:hover,
-.rewards-btn:focus,
 .checkout-btn:hover,
 .checkout-btn:focus {
   background-color: #fff;
@@ -203,31 +194,40 @@ nav {
 
 .cart-product {
   display: flex;
-  justify-content: space-between;
-  background-color: var(--clr-vryvry-light-grey);
-  padding: 1rem;
-  margin: .25rem 0;  
-}
-
-.cart-product-name,
-.cart-item-price,
-.cart-item-qty-container,
-.cart-item-remove {
-  margin-top: 3.5rem;
-}
-
-.cart-product {
-  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  box-shadow: 1px 1px 2px var(--clr-very-light-grey);
+  box-shadow: 0 0 5px var(--clr-light-grey);
+  background-color: var(--clr-vryvry-light-grey);
+  min-width: 80%;
+  padding: 1rem;
+  margin: 1rem .25rem .5rem;  
 }
 
 .cart-product-img img {
   max-width: 120px;
 }
 
+.cart-product-name {
+  margin-top: 1rem;
+}
+
+.cart-item-price,
+.cart-item-qty,
+.cart-item-remove {
+  margin: 0 1rem;
+}
+
+.price-qty-remove {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
 .qty {
-  padding: .25rem;
+  padding: .1rem;
   border-radius: 5px;
 }
 
@@ -245,7 +245,6 @@ nav {
   margin: 0 auto;
   box-shadow: 1px 1px 2px #000;
 }
-
 
 .banner {
   display: flex;
@@ -277,6 +276,7 @@ nav {
 
 #on-sale,
 #new-arrivals,
+#all-shoes,
 #athletic,
 #boots,
 #dress,
@@ -289,6 +289,11 @@ nav {
   margin-top: -175px;
 }
 
+.on-sale,
+.new-arrivals {
+  padding-top: 2rem;
+}
+
 .athletic {
   padding: 2rem 0 0;
 }
@@ -298,6 +303,7 @@ nav {
 }
 
 .on-sale {
+  background-color: var(--clr-vryvry-light-grey); 
   margin-top: 2rem;
 }
 
@@ -305,26 +311,37 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;  
+  align-items: flex-start;  
   max-width: 1200px;  
   padding-bottom: 1.5rem;
 }
 
 .product {
+  display: flex;
+  flex-direction: column;
   margin: .25rem .5rem;
+  -webkit-box-shadow: 0 0 4px var(--clr-light-grey); 
+  box-shadow: 0 0 4px var(--clr-light-grey);
 }
 
-.product:hover,
-.product:focus {
-  transform: scale(1.05);
-}
-
-.product img {
+.product-img {
   width: 100%;
+  height: auto;
+  overflow: hidden;  
+}
+
+.product img {  
+  width: 100%;
+  height: auto;
+  transition: transform .75s;
+}
+
+.product img:hover {
+  transform: scale(1.2);  
 }
 
 .product p {
-  margin: 0;
+  margin: .25rem .25rem 0;
 }
 
 .text-line-through {
@@ -334,21 +351,20 @@ nav {
 .add-to-cart-btn {
   font-family: inherit;
   cursor: pointer;
-  color: #000;
-  background-color: #fff;
-  padding: .5rem 1rem;
-  margin: 1rem 0;
+  color: #fff;
+  background-color: var(--clr-dark-grey);
   border: 1px solid #000;
+  -webkit-box-shadow: 1px 1px 2px 0px var(--clr-dark-grey); 
+  box-shadow: 1px 1px 2px 0px var(--clr-dark-grey);
+  transition: background-color 100ms;  
+  padding: .5rem 1rem;
+  margin: 1rem .25rem;  
 }
 
 .add-to-cart-btn:hover,
 .add-to-cart-btn:focus {
-  color: #fff;
-  background-color: var(--clr-dark-grey);
-  border: none;
-  -webkit-box-shadow: 1px 1px 2px 0px var(--clr-dark-grey); 
-  box-shadow: 1px 1px 2px 0px var(--clr-dark-grey);
-  transition: background-color 100ms;
+  color: #000;
+  background-color: #fff;  
 }
 
 .new-arrivals {
@@ -445,6 +461,25 @@ nav {
   margin: 2rem 2rem;
 }
 
+.mailing-list-container button {  
+  font-family: inherit;
+  color: #fff;
+  background-color: var(--clr-dark-grey);
+  border: 1px solid #000;
+  -webkit-box-shadow: 1px 1px 2px 0px var(--clr-dark-grey); 
+  box-shadow: 1px 1px 2px 0px var(--clr-dark-grey);
+  transition: background-color 100ms;  
+  padding: .15rem .5rem;
+  border-radius: 5px;
+}
+  
+.mailing-list-container button:hover,
+.mailing-list-container button:focus {
+  color: #000;
+  background-color: #fff;  
+}
+
+
 .contact-us {
   margin: 1rem 0;
 }
@@ -459,7 +494,7 @@ nav {
 .contact-us-container {  
   padding: 1rem;
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -470,7 +505,7 @@ nav {
 }
 
 .contact-us-form label {
-  padding: .25rem 0;
+  padding: .25rem 0 0;
   margin: 0;
 }
 
@@ -488,19 +523,19 @@ nav {
 }
 
 .contact-us-form button {  
-  background-color: #fff;
+  color: #fff;
+  background-color: var(--clr-dark-grey);
   border: 4px solid var(--clr-dark-grey);
-  color: #000;
   font-size: 1.25rem;
   width: 100%;
-  padding: 1rem;
-  margin: 1rem 0 0;
+  padding: .5rem;
+  /* margin: 1rem 0 0; */
 }
 
 .contact-us-form button:hover,  
 .contact-us-form button:focus {  
-  background-color: var(--clr-dark-grey);
-  color: #fff;
+  background-color: #fff;
+  color: var(--clr-dark-grey);
 }
 
 footer {
@@ -539,4 +574,8 @@ footer a:focus {
 .payment-options-accepted {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.payment-options-accepted i {
+  cursor: default;
 }

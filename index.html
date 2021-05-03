@@ -23,7 +23,6 @@
     <nav id="main-nav">
 
       <div class="main-nav">
-
         <button class="menu-icon" id="menu-icon">
           <i class="fas fa-bars"></i>
         </button>
@@ -37,22 +36,19 @@
           <a href="#"><i class="fas fa-shopping-cart"></i></a>
           <span class="num-cart-items" id="num-cart-items">2</span>
         </div>
-
       </div>
 
       <div class="sub-nav">
-
         <div class="menu-items" id="menu-items">
           <ul>
-            <li><a href="./index.html#new-arrivals">New Arrivals</a></li>
-            <li><a href="./shop.html#boots">Boots</a></li>
-            <li><a href="./shop.html#dress">Dress</a></li>
-            <li><a href="./shop.html#heels">Heels</a></li>
-            <li><a href="./shop.html#athletic">Athletic</a></li>
-            <li><a href="./index.html#on-sale">On Sale</a></li>
+            <li><a href="#new-arrivals">New Arrivals</a></li>
+            <li><a href="#boots">Boots</a></li>
+            <li><a href="#dress">Dress</a></li>
+            <li><a href="#heels">Heels</a></li>
+            <li><a href="#athletic">Athletic</a></li>
+            <li><a href="#on-sale">On Sale</a></li>
           </ul>
         </div>
-
       </div>
 
     </nav>
@@ -65,17 +61,7 @@
       <div class="my-cart">
         <h1>My Shopping Cart</h1>
       </div>
-      <div class="theo-rewards">
-        <div class="rewards-info-container">
-          <p>
-            Join Theo's Boutique rewards program <br>
-            <strong>Save 20% on this order!</strong>
-          </p>
-        </div>
-        <a href="#">
-          <button class="rewards-btn">Join Theo's Rewards</button>
-        </a>
-      </div>
+
       <div class="cart-product">
         <div class="cart-product-img">
           <img src="./images/heel3.png" alt="high heels">
@@ -83,66 +69,31 @@
         <div class="cart-product-name">
           <p class="item-name">Mario Lucci high heel </p>
         </div>
-        <div class="cart-item-price">
-          <p>Price</p>
-          <span class="item-price">$79</span>
-        </div>
-        <div class="cart-item-qty-container">
-          <p class="cart-item-qty">Qty</p>
-          <div class="qty-selector">
-            <label for="qty"></label>
-            <select class="qty" id="qty" name="quantity">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
+        <div class="price-qty-remove">
+          <div class="cart-item-price">
+            <p class="item-price">$79</p>
+          </div>
+          <div class="cart-item-qty-container">
+            <div class="qty-selector">
+              <label for="qty"></label>
+              <select class="qty" id="qty" name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+          <div class="cart-item-remove">
+            <i class="fas fa-trash"></i>
           </div>
         </div>
-        <div class="cart-item-remove">
-          <i class="fas fa-trash"></i>
-        </div>
-
-      </div>
-      <div class="cart-product">
-        <div class="cart-product-img">
-          <img src="./images/heel3.png" alt="high heels">
-        </div>
-        <div class="cart-product-name">
-          <p class="item-name">Mario Lucci high heel </p>
-        </div>
-        <div class="cart-item-price">
-          <p>Price</p>
-          <span class="item-price">$79</span>
-        </div>
-        <div class="cart-item-qty-container">
-          <p class="cart-item-qty">Qty</p>
-          <div class="qty-selector">
-            <label for="qty"></label>
-            <select class="qty" id="qty" name="quantity">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-          </div>
-        </div>
-        <div class="cart-item-remove">
-          <i class="fas fa-trash"></i>
-        </div>
-
       </div>
       <div class="shopping-cart-total">
         <span>Total:</span>
@@ -150,12 +101,12 @@
           $79
         </span>
       </div>
-
       <button class="checkout-btn" id="checkout-btn">
         Checkout
       </button>
     </div>
     <hr>
+
   </header>
 
   <main>
@@ -163,27 +114,22 @@
     <section class="banner">
 
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-
         <div class="carousel-inner">
-
           <div class="carousel-item active">
-            <a href="./index.html#new-arrivals">
+            <a href="#new-arrivals">
               <img class="d-block w-100" src="./images/banner1.png" alt="First slide">
             </a>
           </div>
-
           <div class="carousel-item">
-            <a href="./index.html#on-sale">
+            <a href="#on-sale">
               <img class="d-block w-100" src="./images/banner2.png" alt="Second slide">
             </a>
           </div>
-
           <div class="carousel-item">
-            <a href="./shop.html">
+            <a href="#all-shoes">
               <img class="d-block w-100" src="./images/banner3.png" alt="Third slide">
             </a>
           </div>
-
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -197,12 +143,8 @@
 
     </section>
 
-    <hr>
-
     <section class="on-sale">
-
       <a id="on-sale"></a>
-
       <h3>
         On Sale
       </h3>
@@ -210,7 +152,9 @@
       <div class="product-img-container">
 
         <div class="product">
-          <img src="./images/heel3.png" alt="high heels">
+          <div class="product-img">
+            <img src="./images/heel3.png" alt="high heels">
+          </div>
           <p class="item-name">Mario Lucci high heel </p>
           <p class="item-price">
             <span class="text-line-through">$99</span> $79
@@ -219,7 +163,9 @@
         </div>
 
         <div class="product">
-          <img src="./images/heel1.png" alt="high heels">
+          <div class="product-img">
+            <img src="./images/heel1.png" alt="high heels">
+          </div>
           <p class="item-name">Paxton high heel <br></p>
           <p class="item-price">
             <span class="text-line-through">$99</span> $79
@@ -228,7 +174,9 @@
         </div>
 
         <div class="product">
-          <img src="./images/athletic1.png" alt="athletic shoes">
+          <div class="product-img">
+            <img src="./images/athletic1.png" alt="athletic shoes">
+          </div>
           <p class="item-name">LV + Nike hightop </p>
           <p class="item-price">
             <span class="text-line-through">$149</span> $129
@@ -237,22 +185,21 @@
         </div>
 
         <div class="product">
-          <img src="./images/boots1.png" alt="boots">
+          <div class="product-img">
+            <img src="./images/boots1.png" alt="boots">
+          </div>
           <p class="item-name">Buxter boot </p>
           <p class="item-price">
             <span class="text-line-through">$89</span> $69
           </p>
           <button class="add-to-cart-btn">Add to Cart</button>
         </div>
-
       </div>
 
     </section>
 
     <section class="new-arrivals">
-
       <a id="new-arrivals"></a>
-
       <h3>
         New Arrivals
       </h3>
@@ -260,7 +207,9 @@
       <div class="product-img-container">
 
         <div class="product">
-          <img src="./images/dress1.png" alt="dress shoes">
+          <div class="product-img">
+            <img src="./images/dress1.png" alt="dress shoes">
+          </div>
           <p>Luigi grand </p>
           <p class="item-price">
             $79
@@ -269,7 +218,9 @@
         </div>
 
         <div class="product">
-          <img src="./images/boots2.png" alt="boots">
+          <div class="product-img">
+            <img src="./images/boots2.png" alt="boots">
+          </div>
           <p>Busher rugged </p>
           <p class="item-price">
             $79
@@ -278,7 +229,9 @@
         </div>
 
         <div class="product">
-          <img src="./images/athletic3.png" alt="athletic shoes">
+          <div class="product-img">
+            <img src="./images/athletic3.png" alt="athletic shoes">
+          </div>
           <p>Nike retro hightop </p>
           <p class="item-price">
             $89
@@ -287,17 +240,247 @@
         </div>
 
         <div class="product">
-          <img src="./images/heel2.png" alt="high heels">
+          <div class="product-img">
+            <img src="./images/heel2.png" alt="high heels">
+          </div>
           <p>Daisy Lee </p>
           <p class="item-price">
             $79
           </p>
           <button class="add-to-cart-btn">Add to Cart</button>
         </div>
-
       </div>
 
-      <a href="./shop.html"><button class="btn-shop">Shop All</button></a>
+    </section>
+
+    <section class="all-shoes" id="all-shoes">
+      <hr>
+      <h2 class="all-shoes-header">
+        All Shoes
+      </h2>
+      <hr>
+
+      <section class="athletic">
+        <a id="athletic"></a>
+        <h3>
+          Athletic
+        </h3>
+
+        <div class="product-img-container">
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/athletic1.png" alt="athletic shoes">
+            </div>
+            <p>LV + Nike hightop </p>
+            <p class="item-price">
+              <span class="text-line-through">$149</span> $129
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/athletic2.png" alt="athletic shoes">
+            </div>
+            <p>Converse </p>
+            <p class="item-price">
+              $129
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/athletic3.png" alt="athletic shoes">
+            </div>
+            <p>Nike retro hightop </p>
+            <p class="item-price">
+              $89
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/athletic4.png" alt="athletic shoes">
+            </div>
+            <p>Spirit running </p>
+            <p class="item-price">
+              $69
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="boots">
+        <a id="boots"></a>
+        <h3>
+          Boots
+        </h3>
+
+        <div class="product-img-container">
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/boots1.png" alt="boots">
+            </div>
+            <p>Buxter boot </p>
+            <p class="item-price">
+              <span class="text-line-through">$89</span> $69
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/boots2.png" alt="boots">
+            </div>
+            <p>Busher rugged </p>
+            <p class="item-price">
+              $89
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/boots3.png" alt="boots">
+            </div>
+            <p>David leather boots </p>
+            <p class="item-price">
+              $99
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/boots4.png" alt="boots">
+            </div>
+            <p>Roxxanne rugged </p>
+            <p class="item-price">
+              $79
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="dress">
+        <a id="dress"></a>
+        <h3>
+          Dress
+        </h3>
+
+        <div class="product-img-container">
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/dress1.png" alt="dress shoes">
+            </div>
+            <p>Luigi grand </p>
+            <p class="item-price">
+              $79
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/dress2.png" alt="dress shoes">
+            </div>
+            <p>Luigi midnight </p>
+            <p class="item-price">
+              $89
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/dress3.png" alt="dress shoes">
+            </div>
+            <p>Luigi martins </p>
+            <p class="item-price">
+              $99
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/dress4.png" alt="dress shoes">
+            </div>
+            <p>Dalio dress </p>
+            <p class="item-price">
+              $89
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="heels">
+        <a id="heels"></a>
+        <h3>
+          Heels
+        </h3>
+
+        <div class="product-img-container">
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/heel1.png" alt="high heels">
+            </div>
+            <p>Paxton high heel </p>
+            <p class="item-price">
+              <span class="text-line-through">$99</span> $79
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/heel2.png" alt="high heels">
+            </div>
+            <p>Daisy Lee </p>
+            <p class="item-price">
+              $79
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/heel3.png" alt="high heels">
+            </div>
+            <p>Mario Lucci high heel </p>
+            <p class="item-price">
+              <span class="text-line-through">$99</span> $79
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./images/heel4.png" alt="high heels">
+            </div>
+            <p>Piper short heel </p>
+            <p class="item-price">
+              $79
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+        </div>
+      </section>
 
     </section>
 
@@ -321,7 +504,7 @@
           incredible fashion to bring to you at great prices.
         </p>
 
-        <a href="./shop.html"><button class="btn-shop">Shop Now</button></a>
+        <a href="#all-shoes"><button class="btn-shop">Shop Now</button></a>
       </div>
 
 
@@ -400,12 +583,18 @@
       <h1>Contact Us</h1>
       <div class="contact-us-container">
         <form class="contact-us-form" action="POST" method="post">
-          <div class="entry"><label for="first-name">First Name:</label><input type="text" required></div>
-          <div class="entry"><label for="last-name">Last Name:</label><input type="text" required></div>
-          <div class="entry"><label for="email">Email:</label><input type="email" required></div>
-          <div class="entry"><label for="phone-number">Phone Number:</label><input type="tel"></div>
-          <div class="entry"><label for="message">Message:</label><textarea rows="6" placeholder="Your message here"
-              required></textarea></div>
+          <div class="entry">
+            <label for="name">Name:</label>
+            <input type="text" required>
+          </div>
+          <div class="entry">
+            <label for="email">Email:</label>
+            <input type="email" required>
+          </div>
+          <div class="entry">
+            <label for="message">Message:</label>
+            <textarea rows="6" placeholder="Your message here" required></textarea>
+          </div>
           <button type="submit">Submit</button>
         </form>
       </div>
@@ -429,7 +618,7 @@
       </div>
 
       <div class="footer-col2 col">
-        <p><a href="#location-hours">Locations & Hours</a></p>
+        <p><a href="#location-hours">Location & Hours</a></p>
         <p><a href="#mailing-list">Exclusive Mailing List</a></p>
       </div>
 
