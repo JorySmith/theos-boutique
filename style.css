@@ -193,8 +193,9 @@ nav {
 
 .checkout-btn:hover,
 .checkout-btn:focus {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--clr-light-grey);
+  border: 2px solid var(--clr-light-grey);
+  color: #fff;
 }
 
 .cart-product {
@@ -370,8 +371,9 @@ nav {
 
 .add-to-cart-btn:hover,
 .add-to-cart-btn:focus {
-  color: #000;
-  background-color: #fff;  
+  color: #fff;
+  background-color: var(--clr-light-grey);
+  border: 1px solid var(--clr-light-grey);; 
 }
 
 .new-arrivals {
@@ -482,10 +484,9 @@ nav {
   
 .mailing-list-container button:hover,
 .mailing-list-container button:focus {
-  color: #000;
-  background-color: #fff;  
+  background-color: var(--clr-light-grey);
+  border: 1px solid var(--clr-light-grey);;
 }
-
 
 .contact-us {
   margin: 1rem 0;
@@ -536,13 +537,13 @@ nav {
   font-size: 1.25rem;
   width: 100%;
   padding: .5rem;
-  /* margin: 1rem 0 0; */
 }
 
 .contact-us-form button:hover,  
 .contact-us-form button:focus {  
   background-color: #fff;
-  color: var(--clr-dark-grey);
+  background-color: var(--clr-light-grey);
+  border: 4px solid var(--clr-light-grey);
 }
 
 footer {
