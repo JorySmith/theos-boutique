@@ -47,6 +47,10 @@ nav {
   background-color: #fff;
 }
 
+#main-nav {
+  box-shadow: 1px 1px 2px var(--clr-light-grey);
+}
+
 .main-nav,
 .menu-items {
   max-width: 1200px;
@@ -59,6 +63,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: .5rem 0;
+  
   z-index: 999;  
 }
 
@@ -249,6 +254,8 @@ nav {
 .banner {
   display: flex;
   justify-content: center;
+  background: url('./images/leaves.jpg') no-repeat fixed center center;
+  background-size: cover;
 }
 
 .carousel {
